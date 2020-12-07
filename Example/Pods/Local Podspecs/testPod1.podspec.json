@@ -1,0 +1,22 @@
+{
+  "name": "testPod1",
+  "version": "0.1.0",
+  "summary": "A short description of testPod1.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Zisch, Jay/testPod1",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Zisch, Jay": "ts-jay.zisch@rakuten.com"
+  },
+  "source": {
+    "git": "https://github.com/Zisch, Jay/testPod1.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "testPod1/Classes/**/*"
+}
