@@ -1,9 +1,10 @@
 {
   "name": "testPod1",
   "version": "0.1.0",
-  "summary": "A short description of testPod1.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Zisch, Jay/testPod1",
+  "summary": "test pod for testing",
+  "swift_versions": "5.3",
+  "description": "a very cool testPod1 for testing pod integration",
+  "homepage": "https://github.com/jz709u/testPod1",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +13,17 @@
     "Zisch, Jay": "ts-jay.zisch@rakuten.com"
   },
   "source": {
-    "git": "https://github.com/Zisch, Jay/testPod1.git",
+    "git": "https://github.com/jz709u/testPod1.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
-  "source_files": "testPod1/Classes/**/*"
+  "source_files": "testPod1/Classes/**/*",
+  "resource_bundles": {
+    "testPod1": [
+      "testPod1/Assets/*.png"
+    ]
+  },
+  "swift_version": "5.3"
 }

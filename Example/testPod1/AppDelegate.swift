@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import testPod1
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let bundles = Bundle.main.url(forResource: nil, withExtension: "bundle")
+        
+        print(TestPod1SDK.resourceBundle.url(forResource: nil,
+                                             withExtension: "png"))
+        for bundle in Bundle.allBundles {
+            print(bundle.bundleIdentifier)
+        }
+        let resource = Bundle.allBundles.first(where: { $0.bundleIdentifier == "org.cocoapods.testPod1"})?.url(forResource: nil,
+                                                                                                               withExtension: nil)
+        print("resource \(resource)")
+        
+        
         return true
     }
 

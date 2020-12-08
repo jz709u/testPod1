@@ -8,30 +8,22 @@
 
 Pod::Spec.new do |s|
   s.name             = 'testPod1'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of testPod1.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '0.1.1'
+  s.summary          = 'test pod for testing'
+  s.swift_version    = '5.3'
   s.description      = "a very cool testPod1 for testing pod integration"
-
   s.homepage         = 'https://github.com/jz709u/testPod1'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Zisch, Jay' => 'ts-jay.zisch@rakuten.com' }
   s.source           = { :git => 'https://github.com/jz709u/testPod1.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.platform         = :ios
   s.ios.deployment_target = '10.0'
   s.source_files = 'testPod1/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'testPod1' => ['testPod1/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'testPod1' => ['testPod1/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -1,6 +1,8 @@
 use_frameworks!
 
-platform :ios, '9.0'
+source 'https://github.com/jz709u/myCocoapodSpecs.git'
+
+platform :ios, '10.0'
 
 target 'testPod1_Example' do
   pod 'testPod1', :path => '../'
